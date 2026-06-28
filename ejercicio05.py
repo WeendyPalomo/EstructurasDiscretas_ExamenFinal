@@ -20,7 +20,6 @@ class NaiveBayesDiagnostico:
             c_est = sum(1 for d in self.datos if d[2] == est)
             p_prior = c_est / total
 
-            # Verosimilitudes condicionales con suavizado de Laplace
             p_trafico = (sum(1 for d in self.datos if d[0] == trafico and d[2] == est) + 1) / (c_est + 2)
             p_alertas = (sum(1 for d in self.datos if d[1] == alertas and d[2] == est) + 1) / (c_est + 2)
 
