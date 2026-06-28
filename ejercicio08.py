@@ -23,7 +23,7 @@ def merge(left, right):
     result.extend(right[j:])
     return result
 
-# Verificación (fuera de las funciones, pegado a la izquierda)
+# Verificación (fuera de las funciones)
 lista = [34, 7, 23, 32, 5, 62]
 lista_ordenada = merge_sort(lista)
 assert lista_ordenada == sorted(lista), "Error: La lista no está correctamente ordenada."
